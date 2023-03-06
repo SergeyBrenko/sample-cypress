@@ -3,15 +3,12 @@ describe('Google search', () => {
   const searchValue = 'Zebrunner';
 
   it('Should return search results', () => {
-    console.log(`Navigating to ${url}`);
     cy.visit(url).contains('Google');
-    cy.screenshot();
 
-    console.log(`Performing search with value ${searchValue}`);
+    console.log(`Performing search with value Zebrunner`);
     cy.xpath("//input[@name='q']").click().type(searchValue).type('{enter}');
-    cy.screenshot();
 
-    console.log(`Verify first search result contains ${searchValue}`);
-    cy.xpath("//*[@id='search']//a").should('contain.text', 'searchValue');
+    console.log(`Verify first search result contains search value`);
+    cy.xpath("//*[@id='search']//a").should('contain.text', searchValue);
   });
 });

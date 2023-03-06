@@ -2,7 +2,6 @@
     "fixturesFolder": "fixtures",
     "integrationFolder": "integration",
     "pluginsFile": "plugins",
-    "screenshotsFolder": "screenshots",
     "supportFile": "support",
     "reporter": "@zebrunner/javascript-agent-cypress",
     "reporterOptions": {
