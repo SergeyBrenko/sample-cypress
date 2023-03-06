@@ -1,0 +1,17 @@
+{
+    "fixturesFolder": "fixtures",
+    "integrationFolder": "integration",
+    "pluginsFile": "plugins",
+    "screenshotsFolder": "screenshots",
+    "supportFile": "support",
+    "reporter": "@zebrunner/javascript-agent-cypress",
+    "reporterOptions": {
+        "reportingServerHostname": "<YOUR_ZEBRUNNER_SERVER_URL>",
+        "reportingServerAccessToken": "<YOUR_ZEBRUNNER_ACCESS_TOKEN>",
+        "reportingProjectKey": "DEF",
+        "reportingRunEnvironment": "STAGE",
+        "reportingRunBuild": "2.41.2.2431-SNAPSHOT",
+        "reportingRunDisplayName": "Zebrunner Demo Launch",
+        "reportingLoggingEnabled": true
+    }
+}

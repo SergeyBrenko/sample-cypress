@@ -1,0 +1,14 @@
+{
+  "name": "sample-cypress",
+  "version": "1.0.0",
+  "description": "Zebrunner WebdriverIO reporting agent",
+  "scripts": {},
+  "dependencies": {
+    "@zebrunner/javascript-agent-cypress": "^1.0.43",
+    "cypress": "^9.7.0",
+    "cypress-wait-until": "^1.7.2",
+    "cypress-xpath": "^2.0.1",
+    "pretty-error": "^4.0.0",
+    "standard": "^16.0.4"
+  }
+}
