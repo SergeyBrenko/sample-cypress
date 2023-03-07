@@ -3,7 +3,7 @@ describe('Google search', () => {
     const url = 'https://www.google.com/';
     const searchValue = 'Zebrunner';
 
-    it('Should return search results 2', () => {
+    it('Should return search results 2', {'owner': 'hpotter'}, () => {
         cy.visit(url).contains('Google');
 
         console.log(`Performing search with value Zebrunner`);
@@ -13,7 +13,7 @@ describe('Google search', () => {
         cy.xpath("//*[@id='search']//a").should('contain.text', searchValue);
     });
 
-    it('Should fail when return search results 2', () => {
+    it('Should fail when return search results 2', {'owner': 'hpotter'}, () => {
         cy.visit(url).contains('Google');
 
         console.log(`Performing search with value Zebrunner`);
