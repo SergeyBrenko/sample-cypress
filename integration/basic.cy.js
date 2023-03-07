@@ -1,14 +1,26 @@
 describe('Google search', () => {
-  const url = 'https://www.google.com/';
-  const searchValue = 'Zebrunner';
 
-  it('Should return search results', () => {
-    cy.visit(url).contains('Google');
+    const url = 'https://www.google.com/';
+    const searchValue = 'Zebrunner';
 
-    console.log(`Performing search with value Zebrunner`);
-    cy.xpath("//input[@name='q']").click().type(searchValue).type('{enter}');
+    it('Should return search results', () => {
+        cy.visit(url).contains('Google');
 
-    console.log(`Verify first search result contains search value`);
-    cy.xpath("//*[@id='search']//a").should('contain.text', searchValue);
-  });
+        console.log(`Performing search with value Zebrunner`);
+        cy.xpath("//input[@name='q']").click().type(searchValue).type('{enter}');
+
+        console.log(`Verify first search result contains search value`);
+        cy.xpath("//*[@id='search']//a").should('contain.text', searchValue);
+    });
+
+    it('[Fail] Should return search results', () => {
+        cy.visit(url).contains('Google');
+
+        console.log(`Performing search with value Zebrunner`);
+        cy.xpath("//input[@name='q']").click().type(searchValue).type('{enter}');
+
+        console.log(`Verify first search result contains search value`);
+        cy.xpath("//*[@id='search']//a").should('contain.text', 'dummy value');
+    });
+
 });
