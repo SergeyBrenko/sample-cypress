@@ -4,7 +4,7 @@
   "description": "Zebrunner WebdriverIO reporting agent",
   "scripts": {},
   "dependencies": {
-    "@zebrunner/javascript-agent-cypress": "^1.0.43",
+    "@zebrunner/javascript-agent-cypress": "1.0.44-alpha1",
     "cypress": "^9.7.0",
     "cypress-wait-until": "^1.7.2",
     "cypress-xpath": "^2.0.1",
